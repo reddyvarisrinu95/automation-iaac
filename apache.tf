@@ -52,14 +52,14 @@ resource "aws_instance" "apache" {
 
 #create ec2-grafana 
 
-resource "aws_instance" "grafana" {
-  ami           = "ami-01216e7612243e0ef"
-  instance_type = "t2.micro"
-  subnet_id     = aws_subnet.private[0].id
-  security_groups  =[aws_security_group.apache.id]
+# resource "aws_instance" "grafana" {
+#   ami           = "ami-01216e7612243e0ef"
+#   instance_type = "t2.micro"
+#   subnet_id     = aws_subnet.private[0].id
+#   security_groups  =[aws_security_group.apache.id]
 
   
-  tags = {
-    Name = "dev-grafana"
-  }
-}
+#   tags = {
+#     Name = "dev-grafana"
+#   }
+# }

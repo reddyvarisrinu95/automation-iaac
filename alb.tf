@@ -44,7 +44,7 @@ resource "aws_security_group" "alb" {
 
   
   tags = {
-    Name = "dev-alb"
+    Name = "Dev-alb"
   }
 }
 

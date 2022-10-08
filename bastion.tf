@@ -45,6 +45,7 @@ resource "aws_instance" "bastion" {
 
   tags = {
     Name = "dev-bastion"
+    terraform = "true"
   }
 }
 
